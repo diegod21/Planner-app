@@ -9,11 +9,55 @@
 </head>
 <body class="h-100 w-100">
     <div class="d-flex flex-row h-100" id="container">
-        <div id="daily" class="bg-primary w-100"onclick="dclick()">aa</div>
 
-        <div id="monthly" class="bg-secondary w-25" onclick="wclick()">aa</div>
-        <div id="yearly" class="bg-success w-25"onclick="mclick()">aa</div>
-        <div id="other" class="bg-danger w-25" onclick="oclick()">aa</div>
+        <div id="daily" class="bg-primary w-100 container"onclick="dclick()">
+
+            <h1>Semanal</h1>
+            <div id="inputList1">
+                <div><input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span></div>
+            </div>
+            
+            <div>
+                <button class="btn btn-success" onclick="createInput()">+</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+
+        <div id="weekly" class="bg-secondary w-25 container d-flex flex-column" onclick="wclick()">
+            <h1>Semanal</h1>  
+            <div id="inputList">
+                <input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span>
+            </div>
+            <div>
+                <button class="btn btn-success" onclick="createInput()">+</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+
+
+        <div id="yearly" class="bg-success w-25 container"onclick="mclick()">
+            <h1>Semanal</h1>
+            <div id="inputList">
+                <input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span><br>
+            </div>
+            <div>
+                <button class="btn btn-success" onclick="createInput()">+</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+
+
+        <div id="other" class="bg-danger w-25 container" onclick="oclick()">
+            <h1>Semanal</h1>
+            
+            <div id="inputList">
+                <input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span><br>
+            </div>
+            <div>
+                <button class="btn btn-success" onclick="createInput()">+</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+        </div>
     </div>
 
     <script src="script/main.js"></script>
