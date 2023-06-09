@@ -1,3 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
 #daily{
-    width: 80%;
+    width: 100%;
+    background-color: #607D8B;
+}
+#weekly{
+    background-color: #546E7A;
+}
+#yearly{
+    background-color: #455A64;
+}
+#other{
+    background-color: #37474F;
 }

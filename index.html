@@ -6,56 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/global.css">
 </head>
 <body class="h-100 w-100">
-    <div class="d-flex flex-row h-100" id="container">
+    <div class="d-flex flex-column h-100 w-100 " id="container">
 
-        <div id="daily" class="bg-primary w-100 container"onclick="dclick()">
+        <div id="daily" class="h-100 w-100 p-3"onclick="dclick()">
 
-            <h1>Semanal</h1>
-            <div id="inputList1">
-                <div><input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span></div>
+            <h1>Diária</h1>
+            <div id="inputDay">
+                    <input type="checkbox" name="listitem" id="id1">limpar casa <span class="btn btn-close border border-dark" onclick="removeInput(this)">X</span>
             </div>
             
             <div>
-                <button class="btn btn-success" onclick="createInput()">+</button>
-                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-success" onclick="createInputDay()">+</button>
             </div>
         </div>
 
-        <div id="weekly" class="bg-secondary w-25 container d-flex flex-column" onclick="wclick()">
+        <div id="weekly" class=" h-25 w-100 p-3 d-flex flex-column" onclick="wclick()">
             <h1>Semanal</h1>  
-            <div id="inputList">
-                <input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span>
+            <div id="inputWeek">
+                <input type="checkbox" name="listitem" id="id1">limpar casa <span class="btn btn-close border border-dark" onclick="removeInput(this)">X</span>
             </div>
             <div>
-                <button class="btn btn-success" onclick="createInput()">+</button>
-                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-success" onclick="createInputWeek()">+</button>
             </div>
         </div>
 
 
-        <div id="yearly" class="bg-success w-25 container"onclick="mclick()">
-            <h1>Semanal</h1>
-            <div id="inputList">
-                <input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span><br>
+        <div id="yearly" class=" h-25 w-100 p-3"onclick="mclick()">
+            <h1>Anual</h1>
+            <div id="inputYear">
+                <input type="checkbox" name="listitem" id="id1">limpar casa <span class="btn btn-close border border-dark" onclick="removeInput(this)">X</span>
             </div>
             <div>
-                <button class="btn btn-success" onclick="createInput()">+</button>
-                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-success" onclick="createInputYear()">+</button>
             </div>
         </div>
 
 
-        <div id="other" class="bg-danger w-25 container" onclick="oclick()">
-            <h1>Semanal</h1>
+        <div id="other" class="h-25 w-100 p-3" onclick="oclick()">
+            <h1>Outras</h1>
             
-            <div id="inputList">
-                <input type="checkbox" name="listitem" id="id1">limpar casa <span onclick="removeInput(this)">X</span><br>
+            <div id="inputOthers">
+                <input type="checkbox" name="listitem" id="id1">limpar casa <span class="btn btn-close border border-dark" onclick="removeInput(this)">X</span>
             </div>
             <div>
-                <button class="btn btn-success" onclick="createInput()">+</button>
-                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-success" onclick="createInputOthers()">+</button>
+                 <!--<button class="btn btn-danger">Delete</button>-->
             </div>
         </div>
     </div>
